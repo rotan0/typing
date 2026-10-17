@@ -1,0 +1,27 @@
+[Unit]
+Description=Restricted typing lesson model gateway
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+WorkingDirectory=/opt/typing-gateway
+EnvironmentFile=-/etc/typing-gateway/providers.env
+Environment=TYPING_MODELS_FILE=/etc/typing-gateway/models.json
+ExecStart=/usr/bin/node /opt/typing-gateway/server.cjs
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryMax=256M
+TasksMax=32
+LimitNOFILE=1024
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+{
+  "qwerty": {"name":"US QWERTY","tiers":["asdfghjkl","qwertyuiop","zxcvbnm","ASDFGHJKLQWERTYUIOPZXCVBNM",""]},
+  "azerty": {"name":"French AZERTY","tiers":["qsdfghjklmae","zrtyuiop","wxcvbn","éèàùçœêâîôûëïü","ABCDEFGHIJKLMNOPQRSTUVWXYZÉÈÀÙÇŒÊÂÎÔÛËÏÜ"]},
+  "qwertz": {"name":"German QWERTZ","tiers":["asdfghjklöä","qwertzuiopü","yxcvbnmß","ASDFGHJKLÖÄQWERTZUIOPÜYXCVBNMẞ",""]},
+  "arabic101": {"name":"Arabic 101","tiers":["شسيبلاتنمكط","ضصثقفغعهخحجد","ئءؤرلاىةوزظ","أإآًٌٍَُِّْ",""]},
+  "inscript": {"name":"Hindi InScript","tiers":["ोे्िुपरकतचटओएअइउफऱखथछठ","ौैाीूबहगदजडऔऐआईऊभङघधझढ","ंमनवलसषशऋरुक्षत्रज्ञ","ँणय़ऍऑॉॅृॄॐ",""]},
+  "unrestricted": {"name":"Unrestricted / IME","tiers":["","","","",""]}
+}

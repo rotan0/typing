@@ -1,0 +1,13 @@
+Options -Indexes -MultiViews
+DirectoryIndex public/index.php
+RewriteEngine On
+
+RewriteRule ^(?:config|data|gateway|scripts|sql|tests|\.runtime|\.git)(?:/|$) - [F,L,NC]
+RewriteRule (^|/)\. - [F,L]
+RewriteRule \.(?:bat|ps1|sql|zip|dump|log|md)$ - [F,L,NC]
+RewriteRule ^assets/.*\.(?:css|js)$ - [L]
+RewriteRule ^$ public/index.php [L]
+RewriteRule ^(account|dashboard|export|health|index|installer|studio)\.php$ public/$1.php [L]
+RewriteRule ^api/(assistant|conversations|lessons|profile|submit)\.php$ public/api/$1.php [L]
+RewriteRule ^public/(?:api/)?[a-z]+\.php$ - [L]
+RewriteRule ^ - [F,L]

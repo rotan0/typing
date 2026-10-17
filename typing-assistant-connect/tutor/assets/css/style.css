@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+#keyboard {
+  margin: 20px 0;
+}
+
+#keyboard .row {
+  margin-bottom: 5px;
+}
+
+#keyboard span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
+#keyboard span.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+#typing-area {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.language-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  padding: 1rem;
+  background: #f3f5f7;
+  border: 1px solid #ccd2d8;
+}
+
+.language-controls p {
+  max-width: 42rem;
+}
+
+.wizard {
+  max-width: 48rem;
+  margin: 2rem auto;
+}
+
+.wizard label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.wizard input {
+  display: block;
+  padding: 0.4rem;
+  width: min(24rem, 90%);
+}
+
+button, select {
+  padding: 0.4rem;
+  margin: 0.3rem 0;
+}
+
+.error {
+  color: #a31515;
+}
+
+.success {
+  color: #176b32;
+}
+
+.studio {
+  max-width: 64rem;
+  margin: 1.5rem auto;
+}
+
+.studio section {
+  border: 1px solid #ccd2d8;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.studio label {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.studio input:not([type="file"]), .studio textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 48rem;
+  padding: 0.5rem;
+}
+
+.studio input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+#messages li {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-block: 0.75rem;
+}
+
+nav a {
+  display: inline-block;
+  margin-inline-end: 1rem;
+}

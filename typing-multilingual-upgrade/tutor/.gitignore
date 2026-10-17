@@ -1,0 +1,15 @@
+/config/database.local.php
+/config/installed.lock
+/.runtime/
+/push_output.log
+*.sql.dump
+__pycache__/
+/config/setup.key
+/data/*
+!/data/published-lessons.json
+*.zip
+/profile.json
+/config/assistant.local.php
+/config/token
+/gateway/providers.env
+/gateway/models.json
